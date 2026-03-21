@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BabyGuard 고객 지원 / Support</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background: #f5f7fa;
+      color: #2d3748;
+      line-height: 1.8;
+    }
+    header {
+      background: linear-gradient(135deg, #1B4F8A 0%, #0D2E54 100%);
+      color: white;
+      padding: 48px 24px 36px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+    header p  { font-size: 0.95rem; opacity: 0.8; }
+    .lang-switch {
+      display: flex; justify-content: center; gap: 12px;
+      padding: 16px; background: #1B4F8A;
+    }
+    .lang-switch button {
+      padding: 8px 20px; border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 20px; background: transparent; color: white;
+      cursor: pointer; font-size: 0.9rem; transition: all 0.2s;
+    }
+    .lang-switch button.active,
+    .lang-switch button:hover {
+      background: white; color: #1B4F8A; border-color: white; font-weight: 600;
+    }
+    .container {
+      max-width: 800px; margin: 40px auto; padding: 0 24px 60px;
+    }
+    .card {
+      background: white; border-radius: 16px; padding: 40px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08); margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 1.2rem; font-weight: 700; color: #1B4F8A;
+      margin: 32px 0 12px; padding-bottom: 8px;
+      border-bottom: 2px solid #e8f0fe;
+    }
+    h2:first-child { margin-top: 0; }
+    p { margin-bottom: 12px; font-size: 0.97rem; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    ul li { margin-bottom: 6px; font-size: 0.97rem; }
+    .highlight {
+      background: #e8f4fd; border-left: 4px solid #5BAFF0;
+      padding: 14px 18px; border-radius: 0 8px 8px 0;
+      margin: 16px 0; font-size: 0.95rem;
+    }
+    .contact-box {
+      background: #f0f7ff; border: 1px solid #bee3f8;
+      border-radius: 12px; padding: 20px 24px; margin-top: 16px;
+    }
+    .contact-box a { color: #1B4F8A; text-decoration: none; font-weight: 600; }
+    .faq-item { margin-bottom: 20px; }
+    .faq-item strong { display: block; margin-bottom: 4px; color: #1B4F8A; }
+    .footer-links {
+      text-align: center; margin-top: 32px; font-size: 0.9rem;
+    }
+    .footer-links a { color: #1B4F8A; text-decoration: none; font-weight: 600; }
+
+    [data-lang] { display: none; }
+    [data-lang].active { display: block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>BabyGuard</h1>
+  <p>고객 지원 &nbsp;/&nbsp; Support</p>
+</header>
+
+<div class="lang-switch">
+  <button class="active" onclick="setLang('ko')">한국어</button>
+  <button onclick="setLang('en')">English</button>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     KOREAN
+═══════════════════════════════════════════════════════════ -->
+<div data-lang="ko" class="active">
+<div class="container">
+  <div class="card">
+
+    <h2>앱 소개</h2>
+    <p>BabyGuard는 임산부를 위한 AI 기반 약물·음식·성분 안전성 확인 앱입니다. 임신 주수에 맞춰 안전 정보를 제공하며, 카메라로 성분표를 촬영하여 간편하게 확인할 수 있습니다.</p>
+
+    <h2>자주 묻는 질문 (FAQ)</h2>
+
+    <div class="faq-item">
+      <strong>Q. 검색 결과는 의학적 진단인가요?</strong>
+      <p>아닙니다. BabyGuard의 분석 결과는 AI 기반 참고 정보이며, 의학적 진단이나 처방을 대체하지 않습니다. 중요한 건강 결정은 반드시 담당 의사와 상담하세요.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Q. 개인정보는 안전한가요?</strong>
+      <p>네. 임신 주수, 즐겨찾기 등 모든 사용자 데이터는 기기에만 로컬 저장되며, 외부 서버로 전송되지 않습니다. 자세한 내용은 <a href="babyguard-privacy-policy.html" style="color:#1B4F8A;font-weight:600;">개인정보 처리방침</a>을 참고하세요.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Q. 카메라 촬영한 이미지는 저장되나요?</strong>
+      <p>아닙니다. OCR 성분 인식을 위해 촬영된 이미지는 분석 즉시 삭제되며, 서버에 저장되지 않습니다.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Q. 프리미엄 구독을 해지하고 싶어요.</strong>
+      <p>구독 해지는 App Store 또는 Google Play의 구독 관리 메뉴에서 직접 처리할 수 있습니다. 해지 후에도 결제 기간이 끝날 때까지 프리미엄 기능을 이용할 수 있습니다.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Q. 앱이 제대로 작동하지 않아요.</strong>
+      <p>아래 방법을 시도해 보세요:</p>
+      <ul>
+        <li>앱을 최신 버전으로 업데이트</li>
+        <li>기기를 재시작</li>
+        <li>앱을 삭제 후 재설치</li>
+      </ul>
+      <p>문제가 지속되면 아래 연락처로 문의해 주세요.</p>
+    </div>
+
+    <h2>문의하기</h2>
+    <p>추가 도움이 필요하시면 아래 이메일로 연락해 주세요. 영업일 기준 1~2일 내에 답변드리겠습니다.</p>
+    <div class="contact-box">
+      <p>이메일: <a href="mailto:hsb5975@gmail.com">hsb5975@gmail.com</a></p>
+    </div>
+
+    <div class="footer-links">
+      <a href="babyguard-privacy-policy.html">개인정보 처리방침</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     ENGLISH
+═══════════════════════════════════════════════════════════ -->
+<div data-lang="en">
+<div class="container">
+  <div class="card">
+
+    <h2>About the App</h2>
+    <p>BabyGuard is an AI-powered app that helps pregnant women check the safety of drugs, foods, and ingredients. It provides safety information tailored to your pregnancy week, and lets you scan ingredient labels with your camera for quick analysis.</p>
+
+    <h2>Frequently Asked Questions (FAQ)</h2>
+
+    <div class="faq-item">
+      <strong>Q. Are the search results a medical diagnosis?</strong>
+      <p>No. BabyGuard's analysis results are AI-based reference information and do not replace medical diagnosis or prescriptions. Always consult your doctor for important health decisions.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Q. Is my personal data safe?</strong>
+      <p>Yes. All user data such as pregnancy week and favorites are stored locally on your device only and are not transmitted to external servers. For details, please see our <a href="babyguard-privacy-policy.html" style="color:#1B4F8A;font-weight:600;">Privacy Policy</a>.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Q. Are camera images stored?</strong>
+      <p>No. Images captured for OCR ingredient recognition are deleted immediately after analysis and are not stored on any server.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Q. How do I cancel my premium subscription?</strong>
+      <p>You can cancel your subscription through the subscription management menu in the App Store or Google Play. After cancellation, you can continue using premium features until the end of the current billing period.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Q. The app isn't working properly.</strong>
+      <p>Please try the following:</p>
+      <ul>
+        <li>Update the app to the latest version</li>
+        <li>Restart your device</li>
+        <li>Uninstall and reinstall the app</li>
+      </ul>
+      <p>If the issue persists, please contact us using the information below.</p>
+    </div>
+
+    <h2>Contact Us</h2>
+    <p>If you need further assistance, please reach out via email. We will respond within 1-2 business days.</p>
+    <div class="contact-box">
+      <p>Email: <a href="mailto:hsb5975@gmail.com">hsb5975@gmail.com</a></p>
+    </div>
+
+    <div class="footer-links">
+      <a href="babyguard-privacy-policy.html">Privacy Policy</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('[data-lang]').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
+    document.querySelector('[data-lang="' + lang + '"]').classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+</body>
+</html>
