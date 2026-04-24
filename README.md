@@ -5,3 +5,5 @@
 | 앱 | 파일 | URL |
 |----|------|-----|
 | BabyGuard | [babyguard-privacy-policy.html](babyguard-privacy-policy.html) | https://hsb5975.github.io/legal/babyguard-privacy-policy |
+| Roomdoku | [roomdoku-privacy-policy.html](roomdoku-privacy-policy.html) | https://hsb5975.github.io/legal/roomdoku-privacy-policy |
+| Roomdoku | [roomdoku-terms.html](roomdoku-terms.html) | https://hsb5975.github.io/legal/roomdoku-terms |

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roomdoku 개인정보 처리방침 / Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background: #f5f3ef;
+      color: #1a1a1a;
+      line-height: 1.8;
+    }
+    header {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+      color: #f5f3ef;
+      padding: 48px 24px 36px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.5px; }
+    header p  { font-size: 0.95rem; opacity: 0.75; }
+    .lang-switch {
+      display: flex; justify-content: center; gap: 12px;
+      padding: 16px; background: #1a1a1a;
+    }
+    .lang-switch button {
+      padding: 8px 20px; border: 2px solid rgba(245,243,239,0.4);
+      border-radius: 20px; background: transparent; color: #f5f3ef;
+      cursor: pointer; font-size: 0.9rem; transition: all 0.2s;
+    }
+    .lang-switch button.active,
+    .lang-switch button:hover {
+      background: #d7263d; color: #f5f3ef; border-color: #d7263d; font-weight: 600;
+    }
+    .container {
+      max-width: 800px; margin: 40px auto; padding: 0 24px 60px;
+    }
+    .card {
+      background: white; border-radius: 16px; padding: 40px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08); margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 1.2rem; font-weight: 700; color: #1a1a1a;
+      margin: 32px 0 12px; padding-bottom: 8px;
+      border-bottom: 2px solid #d7263d;
+    }
+    h2:first-child { margin-top: 0; }
+    p { margin-bottom: 12px; font-size: 0.97rem; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    ul li { margin-bottom: 6px; font-size: 0.97rem; }
+    .highlight {
+      background: #fdecef; border-left: 4px solid #d7263d;
+      padding: 14px 18px; border-radius: 0 8px 8px 0;
+      margin: 16px 0; font-size: 0.95rem;
+    }
+    .updated {
+      text-align: center; font-size: 0.85rem; color: #6b6b6b;
+      margin-top: 32px;
+    }
+    .contact-box {
+      background: #fafafa; border: 1px solid #e3e3e3;
+      border-radius: 12px; padding: 20px 24px; margin-top: 16px;
+    }
+    .contact-box a { color: #d7263d; text-decoration: none; font-weight: 600; }
+
+    /* Language sections */
+    [data-lang] { display: none; }
+    [data-lang].active { display: block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🔍 Roomdoku</h1>
+  <p>개인정보 처리방침 &nbsp;/&nbsp; Privacy Policy</p>
+</header>
+
+<div class="lang-switch">
+  <button class="active" onclick="setLang('ko')">한국어</button>
+  <button onclick="setLang('en')">English</button>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     KOREAN
+═══════════════════════════════════════════════════════════ -->
+<div data-lang="ko" class="active">
+<div class="container">
+  <div class="card">
+
+    <h2>1. 개요</h2>
+    <p>Roomdoku(이하 "앱")는 용의자 배치 기반의 논리 퍼즐 게임입니다. 본 방침은 앱이 수집하는 정보, 사용 목적, 보관 및 보호 방법, 그리고 이용자의 권리를 설명합니다.</p>
+    <div class="highlight">본 앱은 이름·주민등록번호·이메일·전화번호·위치 등 개인을 직접 식별하는 정보를 수집하지 않습니다. 계정은 기기당 익명 ID 기반으로 생성됩니다.</div>
+
+    <h2>2. 수집하는 정보</h2>
+    <p><strong>앱이 수집·처리하는 정보:</strong></p>
+    <ul>
+      <li><strong>익명 사용자 ID</strong> — Firebase 익명 인증이 자동 발급하는 고유 식별자. 이름·이메일 등과 연결되지 않습니다.</li>
+      <li><strong>닉네임</strong> — 이용자가 직접 입력·수정하는 표시명. 랭킹 및 팀 화면에 공개됩니다.</li>
+      <li><strong>게임 진행 데이터</strong> — 해결한 퍼즐 ID, 최고 기록 시간, 사용한 힌트 수, 시도 횟수, 완료 시각.</li>
+      <li><strong>연속 플레이(Streak) 데이터</strong> — 현재 연속 일수, 최장 연속 일수, 마지막 해결 날짜.</li>
+      <li><strong>힌트 보유/구매 현황</strong> — 힌트 보유 수량, 광고 제거 구매 여부.</li>
+      <li><strong>랭킹 점수</strong> — 일간·월간 리더보드의 누적 소요 시간 및 해결 횟수. 공개 랭킹에 닉네임과 함께 표시됩니다.</li>
+      <li><strong>팀·친구 데이터</strong> — 가입한 팀 ID, 팀 일간 기여 점수, 친구 코드 및 친구 관계.</li>
+      <li><strong>미션 진행 데이터</strong> — 일간·주간 미션 달성 및 보상 수령 현황.</li>
+      <li><strong>푸시 알림 토큰</strong> — Firebase Cloud Messaging 등록 토큰(미션 알림 수신 시). 이용자가 푸시 알림을 비활성화하면 저장하지 않습니다.</li>
+      <li><strong>앱 사용 통계 및 충돌 보고</strong> — Firebase Analytics/Crashlytics를 통해 익명 집계되는 기기 모델·OS 버전·충돌 스택 등.</li>
+      <li><strong>광고 관련 데이터</strong> — Google AdMob이 처리하는 광고 ID 등(광고 제거를 구매하지 않은 경우).</li>
+    </ul>
+    <p><strong>수집하지 않는 정보:</strong></p>
+    <ul>
+      <li>이름·주민등록번호·여권번호 등 신원 정보</li>
+      <li>이메일 주소, 전화번호, 주소</li>
+      <li>위치(GPS) 정보</li>
+      <li>연락처, 사진, 카메라, 마이크, 건강 데이터</li>
+    </ul>
+
+    <h2>3. 수집 목적 및 이용</h2>
+    <ul>
+      <li>퍼즐 해결 진행도의 기기 간 동기화 및 재설치 시 복원</li>
+      <li>일간·월간 리더보드, 팀 랭킹, 친구 기능 제공</li>
+      <li>미션 달성·보상 지급 및 푸시 알림 전송</li>
+      <li>인앱 구매(힌트·광고 제거) 처리 및 복원</li>
+      <li>앱 품질 개선(충돌 분석, 기능 사용 빈도 집계)</li>
+      <li>악용 방지(부정 점수 차단, 부적절한 닉네임 신고 대응)</li>
+    </ul>
+
+    <h2>4. 제3자 서비스 및 데이터 공유</h2>
+    <p>앱은 서비스 제공을 위해 다음 제3자 서비스를 사용하며, 각 서비스의 개인정보 처리방침이 함께 적용됩니다.</p>
+    <ul>
+      <li><strong>Firebase (Google LLC)</strong> — 익명 인증, Cloud Firestore(데이터 저장), Cloud Messaging(푸시), Analytics, Crashlytics</li>
+      <li><strong>Google AdMob</strong> — 배너 및 전면 광고 표시(광고 제거 미구매 이용자 대상)</li>
+      <li><strong>Google Play Billing / Apple In-App Purchase</strong> — 인앱 결제 처리 및 영수증 검증</li>
+    </ul>
+    <p>개인 식별 정보를 제3자에게 판매하지 않습니다. 닉네임과 랭킹 점수는 앱의 공개 리더보드 특성상 다른 이용자에게 표시됩니다.</p>
+
+    <h2>5. 데이터 보관 및 삭제</h2>
+    <ul>
+      <li>앱 내부 진행도는 기기 로컬(Hive) 및 Firestore의 <code>users/{익명ID}</code> 문서에 저장됩니다.</li>
+      <li>앱을 삭제하면 기기 내 로컬 데이터는 사라지지만, 익명 ID는 재설치 후에도 복원되지 않으므로 서버 문서는 연결이 끊긴 채 남을 수 있습니다.</li>
+      <li>일간 랭킹 문서는 서비스 운영상 해당 일자가 지나면 자동으로 표시되지 않으며, 월간 랭킹은 월 단위로 회전합니다.</li>
+      <li>Firebase Analytics/Crashlytics에서 수집한 익명 통계는 Google의 기본 보관 정책(최대 14개월)을 따릅니다.</li>
+      <li>계정 삭제(익명 ID에 연결된 모든 문서 삭제)를 요청하시려면 아래 연락처로 해당 ID 또는 닉네임과 함께 요청 주시기 바랍니다.</li>
+    </ul>
+
+    <h2>6. 권한 안내</h2>
+    <ul>
+      <li><strong>네트워크</strong> — Firebase 동기화, 광고 표시, 인앱 결제 처리에 사용됩니다.</li>
+      <li><strong>알림</strong> — 미션 및 일일 이벤트 알림에 사용됩니다. 기기 설정 또는 앱 내 설정에서 언제든 비활성화할 수 있습니다.</li>
+    </ul>
+    <p>앱은 카메라·마이크·위치·연락처·사진 등 민감 권한을 요청하지 않습니다.</p>
+
+    <h2>7. 아동 개인정보 보호</h2>
+    <p>본 앱은 만 13세(미국 COPPA 기준) 또는 만 14세(대한민국 기준) 미만 아동을 주 대상으로 하지 않으며, 해당 연령의 개인정보를 의도적으로 수집하지 않습니다. 법정대리인의 동의 없이 해당 연령 아동의 정보가 수집된 것을 인지한 경우 즉시 삭제합니다.</p>
+
+    <h2>8. 이용자의 권리</h2>
+    <ul>
+      <li>앱 내 설정에서 닉네임·푸시 알림·광고 제거 상태를 확인·변경할 수 있습니다.</li>
+      <li>데이터 열람·정정·삭제를 요청하실 수 있으며, 서버 기록 삭제는 문의 이메일로 요청 주시면 영업일 기준 30일 이내 처리합니다.</li>
+      <li>개인정보 처리에 관한 민원·불만은 개인정보보호위원회(privacy.go.kr) 또는 한국인터넷진흥원(privacy.kisa.or.kr)에 신청하실 수 있습니다.</li>
+    </ul>
+
+    <h2>9. 방침 변경</h2>
+    <p>본 처리방침이 변경될 경우 앱 내 공지 또는 본 페이지를 통해 사전에 안내드립니다. 변경 이후에도 서비스를 계속 이용하시면 변경된 방침에 동의한 것으로 간주합니다.</p>
+
+    <h2>10. 문의</h2>
+    <div class="contact-box">
+      <p>개인정보 처리와 관련된 문의, 열람·삭제 요청은 아래로 연락 주시기 바랍니다.</p>
+      <p>이메일: <a href="mailto:hsb5975@gmail.com">hsb5975@gmail.com</a></p>
+    </div>
+
+    <p class="updated">시행일: 2026년 4월 24일 &nbsp;|&nbsp; 최종 수정: 2026년 4월 24일</p>
+  </div>
+</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     ENGLISH
+═══════════════════════════════════════════════════════════ -->
+<div data-lang="en">
+<div class="container">
+  <div class="card">
+
+    <h2>1. Overview</h2>
+    <p>Roomdoku ("the App") is a logic puzzle game in which players place suspects to solve cases. This policy explains what information the App collects, how it is used, how it is stored and protected, and what rights users have.</p>
+    <div class="highlight">The App does not collect information that directly identifies you, such as your name, national ID, email, phone number, or location. Each account is created from a device-scoped anonymous ID.</div>
+
+    <h2>2. Information We Collect</h2>
+    <p><strong>Information the App collects and processes:</strong></p>
+    <ul>
+      <li><strong>Anonymous user ID</strong> — A unique identifier issued automatically by Firebase Anonymous Authentication. It is not linked to your name or email.</li>
+      <li><strong>Nickname</strong> — A display name you choose and can change. It is visible to others on leaderboards and in teams.</li>
+      <li><strong>Gameplay data</strong> — IDs of solved puzzles, best completion times, hints used, attempts, and completion timestamps.</li>
+      <li><strong>Streak data</strong> — Current streak, longest streak, and last solve date.</li>
+      <li><strong>Hint inventory and purchases</strong> — Number of hints held and whether you purchased "remove ads."</li>
+      <li><strong>Leaderboard scores</strong> — Cumulative seconds and solve count on daily / monthly leaderboards. Displayed publicly together with your nickname.</li>
+      <li><strong>Team and friend data</strong> — Team membership, daily team contribution scores, friend code, and friend relationships.</li>
+      <li><strong>Mission progress</strong> — Daily / weekly mission completion and reward-claim state.</li>
+      <li><strong>Push token</strong> — Firebase Cloud Messaging registration token (only while you keep push notifications enabled).</li>
+      <li><strong>App analytics and crash reports</strong> — Aggregate, anonymous data collected via Firebase Analytics / Crashlytics (device model, OS version, crash stack traces, etc.).</li>
+      <li><strong>Advertising data</strong> — Processed by Google AdMob (e.g., Advertising ID) when you have not purchased "remove ads."</li>
+    </ul>
+    <p><strong>Information we do NOT collect:</strong></p>
+    <ul>
+      <li>Name, national ID, passport number, or other identity information</li>
+      <li>Email address, phone number, or physical address</li>
+      <li>Location (GPS) data</li>
+      <li>Contacts, photos, camera, microphone, or health data</li>
+    </ul>
+
+    <h2>3. How We Use Your Information</h2>
+    <ul>
+      <li>Sync puzzle progress across devices and restore it after reinstall (when a linked account is available)</li>
+      <li>Provide daily / monthly leaderboards, team rankings, and friend features</li>
+      <li>Track mission completion, grant rewards, and deliver push notifications</li>
+      <li>Process and restore in-app purchases (hints, remove ads)</li>
+      <li>Improve app quality (crash analysis, feature-usage aggregation)</li>
+      <li>Prevent abuse (fraudulent-score blocking, response to inappropriate-nickname reports)</li>
+    </ul>
+
+    <h2>4. Third-Party Services &amp; Data Sharing</h2>
+    <p>The App uses the following third-party services, each governed by its own privacy policy:</p>
+    <ul>
+      <li><strong>Firebase (Google LLC)</strong> — Anonymous Authentication, Cloud Firestore (data storage), Cloud Messaging (push), Analytics, Crashlytics</li>
+      <li><strong>Google AdMob</strong> — Banner and interstitial ads for users who have not purchased "remove ads"</li>
+      <li><strong>Google Play Billing / Apple In-App Purchase</strong> — In-app purchase processing and receipt validation</li>
+    </ul>
+    <p>We do not sell personally identifiable information to third parties. Your nickname and leaderboard scores are visible to other players by the public-leaderboard nature of the feature.</p>
+
+    <h2>5. Data Retention &amp; Deletion</h2>
+    <ul>
+      <li>In-app progress is stored locally (Hive) on the device and in the Firestore <code>users/{anonymousId}</code> document.</li>
+      <li>Uninstalling the App removes local data. The server document may remain orphaned because the anonymous ID is not recoverable after reinstall.</li>
+      <li>Daily leaderboard buckets stop being displayed after the day ends; monthly leaderboards rotate by month.</li>
+      <li>Anonymous analytics collected by Firebase Analytics / Crashlytics follow Google's default retention (up to 14 months).</li>
+      <li>To request deletion of your server-side data, email us at the address below with your anonymous ID or nickname.</li>
+    </ul>
+
+    <h2>6. Permissions</h2>
+    <ul>
+      <li><strong>Network</strong> — Used for Firebase sync, ad delivery, and in-app purchase processing.</li>
+      <li><strong>Notifications</strong> — Used for mission and daily-event reminders. You can disable these at any time in system or in-app settings.</li>
+    </ul>
+    <p>The App does not request access to camera, microphone, location, contacts, or photos.</p>
+
+    <h2>7. Children's Privacy</h2>
+    <p>The App is not directed at children under 13 (U.S. COPPA) or under 14 (Republic of Korea). We do not knowingly collect personal information from children in these age groups. If we learn that such information was collected without the required consent of a legal guardian, we will delete it promptly.</p>
+
+    <h2>8. Your Rights</h2>
+    <ul>
+      <li>You can view and change your nickname, push notification preference, and ads-removed status from the in-app settings.</li>
+      <li>You may request access, correction, or deletion of your data. Server-side deletion requests are processed within 30 business days of contacting us.</li>
+      <li>Users in the Republic of Korea may also file complaints with the Personal Information Protection Commission (privacy.go.kr) or the Korea Internet &amp; Security Agency (privacy.kisa.or.kr).</li>
+    </ul>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>If this policy changes, we will provide notice through an in-app message or by updating this page. Continued use of the App after an update constitutes acceptance of the updated policy.</p>
+
+    <h2>10. Contact</h2>
+    <div class="contact-box">
+      <p>For questions about this policy or for access / deletion requests, please contact:</p>
+      <p>Email: <a href="mailto:hsb5975@gmail.com">hsb5975@gmail.com</a></p>
+    </div>
+
+    <p class="updated">Effective: April 24, 2026 &nbsp;|&nbsp; Last updated: April 24, 2026</p>
+  </div>
+</div>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('[data-lang]').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
+    document.querySelector('[data-lang="' + lang + '"]').classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+</body>
+</html>
